@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D95FA3CD2A2C1F56008034E8 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = D95FA3CC2A2C1F56008034E8 /* SwiftSoup */; };
+		D95FA3D02A2C25A7008034E8 /* HTML2Markdown in Frameworks */ = {isa = PBXBuildFile; productRef = D95FA3CF2A2C25A7008034E8 /* HTML2Markdown */; };
 		D9CF27E12A2BAC2F0031E643 /* HNPlusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CF27E02A2BAC2F0031E643 /* HNPlusApp.swift */; };
 		D9CF27E32A2BAC2F0031E643 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CF27E22A2BAC2F0031E643 /* ContentView.swift */; };
 		D9CF27E52A2BAC300031E643 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9CF27E42A2BAC300031E643 /* Assets.xcassets */; };
@@ -26,6 +28,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D95FA3CD2A2C1F56008034E8 /* SwiftSoup in Frameworks */,
+				D95FA3D02A2C25A7008034E8 /* HTML2Markdown in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +87,10 @@
 			dependencies = (
 			);
 			name = HNPlus;
+			packageProductDependencies = (
+				D95FA3CC2A2C1F56008034E8 /* SwiftSoup */,
+				D95FA3CF2A2C25A7008034E8 /* HTML2Markdown */,
+			);
 			productName = HNPlus;
 			productReference = D9CF27DD2A2BAC2F0031E643 /* HNPlus.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,10 @@
 				Base,
 			);
 			mainGroup = D9CF27D42A2BAC2F0031E643;
+			packageReferences = (
+				D95FA3CB2A2C1F56008034E8 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+				D95FA3CE2A2C25A7008034E8 /* XCRemoteSwiftPackageReference "HTML2Markdown" */,
+			);
 			productRefGroup = D9CF27DE2A2BAC2F0031E643 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -339,6 +351,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D95FA3CB2A2C1F56008034E8 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		D95FA3CE2A2C25A7008034E8 /* XCRemoteSwiftPackageReference "HTML2Markdown" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://gitlab.com/mflint/HTML2Markdown";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D95FA3CC2A2C1F56008034E8 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D95FA3CB2A2C1F56008034E8 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+		D95FA3CF2A2C25A7008034E8 /* HTML2Markdown */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D95FA3CE2A2C25A7008034E8 /* XCRemoteSwiftPackageReference "HTML2Markdown" */;
+			productName = HTML2Markdown;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D9CF27D52A2BAC2F0031E643 /* Project object */;
 }
