@@ -142,7 +142,6 @@ struct PostView: View {
                             .frame(height: 1),
                         alignment: .bottom
                     )
-                    .frame(width: .infinity)
                     .gesture(
                         TapGesture()
                             .onEnded { _ in
